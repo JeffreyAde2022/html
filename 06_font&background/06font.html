@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./3_font&background/02_font awesome/css/all.css">
+    <style>
+        @font-face {
+            font-family: myfont;
+            src: url('./3_font&background/01_font/ZCOOLKuaiLe-Regular.ttf');
+        }
+
+        p {
+            font-size: 50px;
+            color: red;
+
+            font-family: myfont;
+        }
+
+        li{
+            list-style: none;
+        }
+
+        li::before{
+            content: "\f6be";
+            font-family: 'FontAwesome' ;
+            margin-right: 10px;
+            color: blueviolet;
+            font-size: 20px;
+        }
+
+        li::after{
+            content:"\f578";
+            font-family:"FontAwesome" ;
+            margin-left: 10px;
+            color: blue;
+            font-size: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+
+    <p>今天天气很好，</p>
+    <i class="fas fa-bell" style="color:blue;font-size: 50px;"></i>
+    <p>how are you,i love you.</p>
+
+    <ul>
+        <li>锄禾日当午</li>
+        <li>汗滴禾下土</li>
+        <li>谁知盘中餐</li>
+        <li >粒粒皆辛苦</li>
+    </ul>
+
+    <span class="fas">&#xf578;</span>
+
+</body>
+
+</html>

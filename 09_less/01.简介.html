@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            --color:blue;
+            --length:100px;
+        }
+
+        .box1 {
+            width: var(--length);
+            height: var(--length);
+            background-color: var(--color);
+        }
+
+        .box2 {
+            width: var(--length);
+            height: var(--length);
+            color:  var(--color);
+        }
+
+        .box3 {
+            width: var(--length);
+            height: calc(100px/2);
+            border: 5px solid  var(--color);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">111</div>
+    <div class="box2">222</div>
+    <div class="box3">333</div>
+</body>
+
+</html>

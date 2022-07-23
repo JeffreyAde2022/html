@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./1_重置样式表/reset.css">
+    <style>
+        .left-news {
+            width: 200px;
+            height: 395px;
+            border-top: 1px lightgray solid;
+            margin: 10px 50px;
+        }
+
+        .title{
+            display: inline-block;
+            height: 40px;
+            line-height: 37px;
+            border-top: 1px red solid;
+            margin-top: -1px;
+        }
+        .left-news .title a{
+            text-decoration: none;
+        }
+
+        .img-news img {
+            width: 200px;
+            height: 125px;
+        }
+
+        .img-news .img {
+            line-height: 20px;
+            color: #FFFFFF;
+            margin-top: -30px;
+            margin-left: 8px;
+            text-decoration: none;
+            font-size: 14px;
+                        
+        }
+
+        .list {
+            width: 200px;
+            height: 180px;
+            margin-top: 16px;
+        }
+
+        .list li a {
+            width: 200px;
+            height: 50px;
+            color: #404040;
+            display: block;
+            padding-top: 12px;
+            padding-bottom: 1px;
+            border-top: 1px #EEEEEE solid;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .list a:hover,
+        .left-news .title a:hover {
+            color: red;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="left-news">
+        <h2 class="title">
+            <a href="#">旅游</a>
+        </h2>
+
+        <div class="img-news">
+            <a href="#">
+                <img src="./2_img/04_网易旅游列表/1.jpg" alt="">
+                <h2 class="img">辽宁备受称赞的养老城市</h2>
+            </a>
+        </div>
+
+        <ul class="list">
+            <li><a href="#">此刻的印度,已经50度了</a></li>
+            <li><a href="#">上万亿建设却变鬼城？网友：可惜好风光</a></li>
+            <li><a href="#">共享国歌：芬兰和爱沙尼亚的国歌</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

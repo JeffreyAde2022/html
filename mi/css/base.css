@@ -1,0 +1,25 @@
+.clearfix::after,
+.clearfix::before {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+body {
+    min-width: 1226px;
+    font-family: ProximaNova, Arial, Sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.w {
+    width: 1226px;
+    margin: 0 auto;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东顶部导航条</title>
+    <link rel="stylesheet" href="./1_重置样式表/reset.css">
+    <link rel="stylesheet" href="./3_font&background/02_font awesome/css/all.css">
+    <style>
+        .clearfix::after,
+        .clearfix::before {
+            content: "";
+            display: table;
+            clear: both;
+        }
+
+        body {
+            font: 12px/1.5 Microsoft YaHei, Heiti SC, tahoma, arial, Hiragino Sans GB, "\5B8B\4F53", sans-serif;
+        }
+
+        .top-bar-wrapper {
+            height: 30px;
+            line-height: 30px;
+            background-color: #e3e4e5;
+            border-bottom: 1px solid #DDDDDD;
+        }
+
+        .top-bar {
+            width: 1190px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .top-bar a,
+        .top-bar span,
+        .top-bar i {
+            text-decoration: none;
+            color: #999999;
+        }
+
+        .top-bar a:hover,
+        .top-bar .highlight {
+            color: #F10215;
+        }
+
+        .location {
+            float: left;
+        }
+
+        .location .city-list {
+            display: none;
+            width: 320px;
+            height: 464px;
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            position: absolute;
+            box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+            top: 31px;
+            z-index: 8888;
+
+        }
+
+        .location:hover .city-list {
+            display: block;
+        }
+
+        .current-city {
+            padding: 0 10px;
+            padding-bottom: 1px;
+            border: 1px solid transparent;
+            border-bottom: none;
+            position: relative;
+            z-index: 9000;
+        }
+
+        .location:hover .current-city {
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-bottom: none;
+        }
+
+        .location .fas {
+            color: #F10215;
+        }
+
+        .short-cut {
+            float: right;
+        }
+
+        .short-cut li {
+            float: left;
+        }
+
+        .short-cut .line {
+            width: 1px;
+            height: 10px;
+            background-color: #999999;
+            margin: 10px 10px 0;
+        }
+
+        .myjd {
+            border: 1px solid transparent;
+            height: 30px;
+            border-bottom: none;
+            padding-bottom: 1px;
+            position: relative;
+            top: -1px;
+            z-index: 9001;
+        }
+
+
+        .myjd-list {
+            display: none;
+            width: 282px;
+            height: 163px;
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            top: 31px;
+            left: -1px;
+            z-index: 8889;
+        }
+
+        .myjd:hover .myjd-list {
+            display: block;
+        }
+
+        .myjd:hover {
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-bottom: none;
+
+        }
+
+        .qiyecaigou {
+            padding-bottom: 5px;
+            border: 1px solid transparent;
+            border-bottom: none;
+            position: relative;
+            top: -1px;
+            z-index: 9100;
+
+        }
+
+        .qiyecaigou-list {
+            display: none;
+            width: 154px;
+            height: 142px;
+            background-color: white;
+            position: absolute;
+            border: 1px solid #CCCCCC;
+            box-shadow: 0 2px 2px rgb(0, 0, 0, 0.2);
+            top: 30px;
+            left: -1px;
+            z-index: 9000;
+        }
+
+        .qiyecaigou:hover {
+            background-color: white;
+            border: 1px solid #CCCCCC;
+            border-bottom: none;
+        }
+
+        .qiyecaigou:hover .qiyecaigou-list {
+            display: block;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="top-bar-wrapper">
+        <div class="top-bar clearfix">
+            <div class="location">
+                <div class="current-city">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <a href="#">北京</a>
+                </div>
+
+                <div class="city-list"></div>
+
+            </div>
+
+            <ul class="short-cut clearfix">
+                <li>
+                    <a href="#">你好，请登录</a>
+                    <a class="highlight" href="#">免费注册</a>
+                </li>
+
+                <li class="line"></li>
+
+                <li>
+                    <a href="#">我的订单</a>
+                </li>
+
+                <li class="line"></li>
+
+                <li class="myjd">
+                    <a class="myjd1" href="#">我的京东</a>
+                    <i class="fas fa-angle-down"></i>
+                    <div class="myjd-list"></div>
+                </li>
+
+
+                <li class="line"></li>
+
+                <li>
+                    <a href="#">京东会员</a>
+                </li>
+
+                <li class="line"></li>
+
+                <li class="qiyecaigou">
+                    <a class="highlight" class="qi1" href="#">企业采购</a>
+                    <i class="fas fa-angle-down"></i>
+                    <div class="qiyecaigou-list"></div>
+                </li>
+
+                <li class="line"></li>
+
+                <li>
+                    <span>客户服务</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+
+
+
+                <li class="line"></li>
+
+                <li>
+                    <span>网站导航</span>
+                    <i class="fas fa-angle-down"></i>
+                </li>
+
+
+                <li class="line"></li>
+
+                <li>
+                    <span>手机京东</span>
+                </li>
+
+                <li class="line"></li>
+
+                <li>
+                    <a href="#">网站无障碍</a>
+                </li>
+
+            </ul>
+
+
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box1 {
+            width: 800px;
+            height: 200px;
+            background-color: #bfa;
+            margin-left: 0;
+        }
+
+        .box2 {
+            width: 50px;
+            height: 50px;
+            margin-left: 50px;
+            background-color: red;
+            animation: test 2s ease-in-out 4 alternate 2s;
+            /* animation-fill-mode:both ; */
+        }
+
+        @keyframes test {
+            from {
+                margin-left: 0;
+                background-color: red;
+            }
+
+            to {
+                margin-left: 750px;
+                background-color: blueviolet;
+            }
+        }
+
+        .box1:hover .box2 {
+            animation-play-state: paused;
+        }
+
+        .box3 {
+            width: 132px;
+            height: 271px;
+            background-image: url(../img/08_动画/bigtap-mitu-queue-big.png);
+            animation: mirabbit 0.4s infinite steps(3);
+        }
+
+        @keyframes mirabbit {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -396px 0;
+            }
+
+        }
+
+        .box4 {
+            width: 256px;
+            height: 256px;
+            background-image: url(../img/08_动画/bg2.png);
+            animation: runman 1s steps(6) infinite;
+        }
+
+
+        @keyframes runman {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -1536px 0;
+            }
+
+        }
+
+        .boxT1 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-image: url(../img/08_动画/trump_run.png);
+            animation: T1 1s infinite steps(6);
+        }
+
+        @keyframes T1 {
+            from {
+                background-position: 0 0;
+            }
+
+            to {
+                background-position: -600px 0;
+            }
+        }
+
+        .boxT2 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-image: url(../img/08_动画/trump_run.png);
+            animation: T2 1s infinite steps(6);
+        }
+
+        @keyframes T2 {
+            from {
+                background-position: 0 -100px;
+            }
+
+            to {
+                background-position: -600px -100px;
+            }
+        }
+
+        .boxT3 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-image: url(../img/08_动画/trump_run.png);
+            animation: T3 1s infinite steps(6);
+        }
+
+        @keyframes T3 {
+            from {
+                background-position: 0 -200px;
+            }
+
+            to {
+                background-position: -600px -200px;
+            }
+        }
+
+        .boxT4 {
+            float: left;
+            width: 100px;
+            height: 100px;
+            background-image: url(../img/08_动画/trump_run.png);
+            animation: T4 1s infinite steps(6);
+        }
+
+        @keyframes T4 {
+            from {
+                background-position: 0 -300px;
+            }
+
+            to {
+                background-position: -600px -300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="box3"></div>
+
+    <br>
+    <br>
+    <div class="box4"></div>
+
+    <div class="boxT1"></div>
+    <div class="boxT2"></div>
+    <div class="boxT3"></div>
+    <div class="boxT4"></div>
+
+</body>
+
+</html>

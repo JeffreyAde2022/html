@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            perspective: 800px;
+        }
+
+        body {
+            border: 10px solid blue;
+        }
+
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: #bfa;
+            margin: 50px auto;
+            margin-top: 150px;
+            transform: translateX(50%) translateY(-50%);
+        }
+
+        .box2 {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+
+        .box3 {
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
+
+        .box4,
+        .box5 {
+            width: 150px;
+            height: 230px;
+            background-color: lightgray;
+            float: left;
+            margin: 50px 50px;
+            transition: all 0.5s;
+        }
+
+        .box4:hover,
+        .box5:hover {
+            transform: translateY(-5px);
+            box-shadow: 2px -2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .box6 {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            margin: 100px auto;
+            margin-top: 200px;
+            transition: 2s;
+        }
+
+        body:hover .box6 {
+            transform: translateZ(100px);
+        }
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+
+    <div class="box6"></div>
+</body>
+
+</html>
